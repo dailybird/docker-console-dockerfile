@@ -2,8 +2,8 @@ FROM php:7.1-fpm
 
 MAINTAINER dailybird <dailybirdo@gmail.com>
 
-# 安装 git curl vim iputils zip
-RUN apt-get update && apt-get install -y git curl vim iputils libfreetype6-dev \
+# 安装 git curl vim zip
+RUN apt-get update && apt-get install -y git curl vim libfreetype6-dev \
 	&& rm -rf /var/lib/apt/list* \
 	&& pecl install zip \
 	&& docker-php-ext-enable zip
