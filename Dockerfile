@@ -17,5 +17,5 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 # 配置 composer 包括引入中国国内镜像
 RUN mv composer.phar /usr/local/bin/composer \
  	&& echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ~/.bashrc \
- 	&& source ~/.bashrc \
+ 	&& . ~/.bashrc \
  	&& composer config -g repo.packagist composer https://packagist.phpcomposer.com
