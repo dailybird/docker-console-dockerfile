@@ -5,5 +5,5 @@ Console tools:
 
 1. curl
 2. vim 
-3. iputils 
+3. composer 
 4. zip
